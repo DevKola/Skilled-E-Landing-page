@@ -1,0 +1,439 @@
+/* --Font Size--
+     10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+ --Spacing System--
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+    --Primary Color--
+    Tint -
+    Shades -
+    
+ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Plus+Jakarta+Sans", sans-serif;
+}
+
+body {
+  line-height: 1.3;
+  overflow-x: hidden;
+}
+
+/***************/
+/*Universal*/
+/***************/
+.container {
+  max-width: 98rem;
+  margin: 0 auto;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+}
+
+/***************/
+/*Header Section*/
+/***************/
+.header {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.btn-header:link,
+.btn-header:visited {
+  background-color: #13183f;
+}
+
+.btn-header:hover,
+.btn-header:active {
+  background-color: #83869a;
+}
+
+/***************/
+/*Hero Section*/
+/***************/
+.section-hero {
+  margin-bottom: 12.8rem;
+}
+.hero-box {
+  margin-top: 10%;
+}
+
+.hero-texts {
+  width: 50%;
+}
+
+.hero-header {
+  font-size: 4.4rem;
+  width: 80%;
+  color: #13183f;
+  line-height: 1.1;
+  margin-bottom: 2.4rem;
+}
+
+.hero-info {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  width: 70%;
+  margin-bottom: 3.2rem;
+}
+
+.btn-hero:link,
+.btn-hero:visited {
+  color: #fff;
+  background: linear-gradient(to bottom, #ff6f48, #f02aa6);
+}
+
+.btn-hero:hover,
+.btn-hero:visited {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 112, 72, 0.404),
+    rgba(240, 40, 167, 0.436)
+  );
+}
+
+.hero-img {
+  position: absolute;
+  width: 60%;
+  top: -15rem;
+  right: -25rem;
+}
+
+.hero-mobile-img {
+  display: none;
+}
+
+/***************/
+/*Info Section*/
+/***************/
+
+.section-info {
+  background: linear-gradient(rgba(255, 255, 255, 0.495), #666ca35d);
+}
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+  padding-bottom: 9rem;
+}
+
+.info-intro-card {
+  background: linear-gradient(to bottom, #ff6f48, #f02aa6);
+  padding: 3.2rem 5.8rem 9.6rem 2.4rem;
+  border-radius: 1.1rem;
+}
+
+.intro-text {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.info-card {
+  border-radius: 1.1rem;
+  box-shadow: 0 0.4rem 2rem rgb(0, 0, 0, 0.1);
+  position: relative;
+  padding: 3.2rem 3.2rem 2rem 2rem;
+}
+
+.info-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  position: absolute;
+  top: -2.5rem;
+  left: 3rem;
+}
+
+.info-header {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #13183f;
+  margin-bottom: 2.4rem;
+}
+
+.info-text {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 2.4rem;
+}
+
+.info-link:link,
+.info-link:visited {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  color: #f74780;
+  transition: all 0.2s ease-in-out;
+}
+
+.info-link:hover,
+.info-link:active {
+  color: #ffa7c3;
+}
+
+/***************/
+/*Footer Section*/
+/***************/
+
+.footer {
+  background-color: #13183f;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem 0;
+}
+
+.footer-logo {
+  color: #fff;
+  font-weight: 600;
+}
+
+.footer-btn:link,
+.footer-btn:visited {
+  background: linear-gradient(#4851ff, #f02aa6);
+}
+
+.footer-btn:hover,
+.footer-btn:active {
+  background: linear-gradient(#ffa7c3, #ffa7c3);
+}
+
+/***************/
+/*Media Queries*/
+/***************/
+/* Between 1,360px and 2,000px. Landscape Orientation */
+@media only screen and (min-width: 85em) and (max-width: 125em) and (orientation: landscape) {
+  .hero-img {
+    width: 55%;
+    top: -12rem;
+    right: -15rem;
+  }
+}
+
+/* Below 1,184px. Landscape Orientation */
+@media only screen and (max-width: 74em) and (orientation: landscape) {
+  .hero-img {
+    width: 55%;
+    top: -5rem;
+    right: -20rem;
+  }
+}
+
+/* Below 1.024px. Landscape Orientation */
+@media only screen and (max-width: 64em) and (orientation: landscape) {
+  /* 9px */
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* Below 928px. Landscape Orientation */
+@media only screen and (max-width: 58em) and (orientation: landscape) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .hero-img {
+    width: 55%;
+    top: -2rem;
+    right: -20rem;
+  }
+}
+
+/* Below 896px. Landscape Orientation */
+
+@media only screen and (max-width: 56em) and (orientation: landscape) {
+  html {
+    font-size: 53%;
+  }
+
+  .hero-header {
+    font-size: 4rem;
+  }
+
+  .hero-img {
+    width: 55%;
+    top: -5rem;
+    right: -18rem;
+  }
+}
+
+/* Below 850px Landscape Orientation */
+
+@media only screen and (max-width: 53em) and (orientation: landscape) {
+  .hero-img {
+    width: 58%;
+    top: -2rem;
+    right: -20rem;
+  }
+}
+
+/* Below 800px Landscape Orientation */
+@media only screen and (max-width: 50em) and (orientation: landscape) {
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    padding: 0 3.2rem;
+  }
+
+  .hero-img {
+    width: 58%;
+    top: -2rem;
+    right: -20rem;
+  }
+
+  .info-cards {
+    padding: 3.2rem 3.2rem 9rem 2rem;
+  }
+
+  .footer {
+    padding: 1.8rem 0;
+  }
+}
+
+/* Below 688px (Portrait Orientation)*/
+@media only screen and (max-width: 43em) and (orientation: landscape) {
+  .hero-box {
+    margin-top: 15%;
+  }
+  .hero-texts {
+    width: 70%;
+  }
+
+  .hero-img {
+    width: 70%;
+    top: -4rem;
+    right: -20rem;
+  }
+
+  .info-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .info-intro-card,
+  .info-card {
+    padding: 3.2rem 5.8rem 5rem 2.4rem;
+  }
+}
+
+/* Below 528px (Portrait Orientation)*/
+@media only screen and (max-width: 33em) {
+  .hero-box {
+    margin-bottom: 8rem;
+  }
+
+  .hero-info {
+    width: 100%;
+    line-height: 1.3;
+  }
+
+  .hero-img {
+    width: 75%;
+    top: -4rem;
+    right: -19rem;
+  }
+
+  .hero-header {
+    font-size: 3.3rem;
+    width: 100%;
+  }
+
+  .hero-info {
+    width: 100%;
+    line-height: 1.3;
+  }
+
+  .hero-texts {
+    width: 60%;
+  }
+
+  .section-hero {
+    margin-bottom: 5rem;
+  }
+}
+
+/* Between 200px and 450px (Portrait Orientation) */
+@media only screen and (max-width: 28em) {
+  .container {
+    padding: 0 3.2rem;
+  }
+
+  .hero-box {
+    margin-bottom: 3.2rem;
+  }
+
+  .hero-header {
+    font-size: 3.3rem;
+    width: 100%;
+  }
+
+  .hero-info {
+    width: 100%;
+    line-height: 1.3;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .hero-texts {
+    width: 100%;
+  }
+
+  .hero-mobile-img {
+    display: block;
+    width: 100%;
+  }
+
+  .info-cards {
+    grid-template-columns: 1fr;
+    padding: 0rem 0rem 9rem 0rem;
+  }
+
+  .info-cards {
+  }
+
+  .section-hero {
+    margin-bottom: 5rem;
+  }
+
+  .footer {
+    padding: 2.4rem 0;
+  }
+}
